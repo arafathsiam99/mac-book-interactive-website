@@ -13,49 +13,49 @@
 
 <body>
     <main>
-        <section>
-            <div class="container">
-                <div class="col-md-6  ">
+        <section class="my-4">
+            <div class="container d-flex gap-5">
+                <div class="col-md-8  center-item w-auto">
                     <img src="images/mac.png" alt="">
                 </div>
-                <div class="col-md-6  ">
+                <div class="col-md-4 center-item ">
                     <h1>Customize your Blue 24-inch iMac with Apple M1 chip </h1>
                     <p>Apple M1 chip with 8- core CPU with 4 performance cores and 4 efficiency cores,7-core GPU and
                         16-core neural engine 8GB unified memory 256GB SSD storage two thunderbolt/usb 4 ports magic
                         mouse magic keyboard-US english</p>
                     <h2>Memory</h2>
-                    <div>
-                        <button>8GB unified Memory</button>
-                        <button>16GB unified Memory</button>
+                    <div class="d-flex">
+                        <button class="mx-2" id="memory-8">8GB unified Memory</button>
+                        <button class="mx-2" id="memory-16">16GB unified Memory</button>
                     </div>
                     <h2>Storage</h2>
-                    <div>
-                        <button>256GB SSD Storage</button>
-                        <button>256GB SSD Storage</button>
-                        <button>1TB SSD Storage</button>
+                    <div class="d-flex">
+                        <button id="storage-256" class="mx-2">256GB SSD Storage</button>
+                        <button id="storage-512" class="mx-2">512GB SSD Storage</button>
+                        <button id="storage-1000" class="mx-2">1TB SSD Storage</button>
                     </div>
                     <h2>Choose your delivery option</h2>
-                    <div>
-                        <button>Friday,Aug 25 Free Prime delivery</button>
-                        <button>Friday,Aug 25 delivery charge $20</button>
+                    <div class="d-flex">
+                        <button id="free-delivery" class="mx-2">Friday,Aug 25 Free Prime delivery</button>
+                        <button id="pay-delivery" class="mx-2">Friday,Aug 25 delivery charge $20</button>
                     </div>
-                    <div>
+                    <div class="d-flex align-items-center justify-content-between border-bottom">
                         <h2>Best Price</h2>
                         <h3>$1299</h3>
                     </div>
-                    <div>
+                    <div class="d-flex align-items-center justify-content-between border-bottom">
                         <h2>Extra memory cost</h2>
-                        <h3>$0</h3>
+                        <h3>$<span id="memory-cost">0</span></h3>
                     </div>
-                    <div>
-                        <h2>Extra memory cost</h2>
-                        <h3>$0</h3>
+                    <div class="d-flex align-items-center justify-content-between border-bottom">
+                        <h2>Extra storage cost</h2>
+                        <h3>$ <span id="storage-cost">0</span></h3>
                     </div>
-                    <div>
+                    <div class="d-flex align-items-center justify-content-between border-bottom border-5">
                         <h2>Delivery charge</h2>
-                        <h3>$0</h3>
+                        <h3>$ <span id="delivery-charge">0</span></h3>
                     </div>
-                    <div>
+                    <div class="d-flex align-items-center justify-content-between">
                         <h2>Total Price</h2>
                         <h3>$1299</h3>
                     </div>
@@ -74,6 +74,7 @@
             <h1>Total:$1299 </h1>
         </section>
     </main>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
